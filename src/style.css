@@ -1,0 +1,61 @@
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family:'Courier New', Courier, monospace;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+}
+
+.game_title{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.game_status{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.game_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 237px;
+    margin: 20px 0 20px 0;
+    font-size: 40px;
+}
+
+.cell{
+    display: flex;
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+} 
+
+.cell:hover{
+    background-color: rgb(250, 255, 255);
+}
+
+.winner{
+    background-color: rgb(183, 241, 180);
+}
+
+#restart_button{
+    font-size: 20px;
+    background-color: azure;
+    border-radius: 20px;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#restart_button:hover{
+    background-color: rgb(217, 234, 234);
+}
